@@ -1,0 +1,60 @@
+Manuale:
+
+costruire un classificatore, addestrarlo e testarlo:
+
+	ClassifierBuilder clb = new ClassifierBuilder();
+	Options opt = new Options();
+	clb.setOpt(opt);
+	opt.setSelectedFeaturesByFrequency(true);
+	opt.setNumFeatures(150);
+	opt.setRemoveEmoticons(true);
+	clb.prepareTrain();
+	clb.prepareTest();
+	NaiveBayes nb = new NaiveBayes();
+	clb.constructClassifier(nb);
+	
+costruire un classificatore weighted majority utilizzando classificatori già costruiti:
+
+	List<IClassifier> classifiers = new LinkedList<IClassifier>();
+	ClassifierBuilder cb = new ClassifierBuilder();
+	WekaClassifier wc1 = cb.retrieveClassifier("weka.classifiers.bayes.NaiveBayes");
+	WekaClassifier wc2 = cb.retrieveClassifier("weka.classifiers.trees.J48");
+	WekaClassifier wc3 = cb.retrieveClassifier("weka.classifiers.functions.VotedPerceptron");
+	classifiers.add(wc1);
+	classifiers.add(wc2);
+	classifiers.add(wc3);
+	WeightedMajority wm  = new WeightedMajority(classifiers);
+	Istanza ist = wm.weightedClassify("i am very sad");
+	System.out.println(ist.getPolarity());
+	ist.setTarget("4");
+	wm.setTarget(ist);
+	System.out.println(wm.get_cl2weight().get(1) + " " + wm.get_cl2weight().get(2) + " " + wm.get_cl2weight().get(3));
+	
+Da linea di comando:
+
+Preparare i file per il train del classificatore:
+	"prepareTrain"
+Possibili parametri:
+	"-sf": toglie dalle features, quelle utilizzate solo una volta nei documenti
+	"-re": rimuove le emoticons
+Se i parametri non vengono inseriti, l'azione di default è opposta a quella vista in precedenza.
+
+Costruire e addestrare il classificatore:
+	"construct"
+Possibili parametri:
+	<nome del classificatore>
+	<numero features da selezionare>
+Se il secondo parametro non viene inserito, vengono selezionate tutte le features
+
+Costruire ed utilizzare un classificatore weighted majority:
+	"weightedMajority"
+Possibili parametri:
+	<nomi dei classificatori da utilizzare>
+I classificatori inseriti come parametri devono essere già stati costruiti in precedenza.
+
+Calcolare la precisione di un classificatore weighted majority:
+	"evaluateWm"
+Possibili parametri:
+	<nomi dei classificatori da utilizzare>
+
+	
