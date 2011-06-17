@@ -1,4 +1,4 @@
-= Introduction =
+= Introduzione =
 In questo progetto viene presentata un'applicazione che permette di effettuare sentiment analysis su twitter utilizzando tecniche di machine learning.
 L'applicazione può essere utilizzata tramite linea di comando o tramite API consultabili attraverso la documentazione Javadoc.
 
