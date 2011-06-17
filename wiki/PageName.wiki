@@ -17,7 +17,7 @@ Costruisce le strutture dati necessarie per l'addestramento del classificatore t
 costruisce e addestra il classificatore specificato nel parametro.
 E' possibile inserire un ulteriore parametro opzionale indicante il numero di termini totali da selezionare per l'addestramento.
 
-*weightedMajority* {{{<nomi-classificatori>}}}*:
+*weightedMajority {{{<nomi-classificatori>}}}*:
 
 costruisce un classificatore weighted majority utilizzando i classificatori specificati come parametri.
 
