@@ -1,0 +1,14 @@
+= Introduction =
+In questo progetto viene presentata un'applicazione che permette di effettuare sentiment analysis su twitter utilizzando tecniche di machine learning.
+L'applicazione può essere utilizzata tramite linea di comando o tramite API consultabili attraverso la documentazione Javadoc.
+
+= Utilizzo tramite linea di comando =
+
+Lista di comandi e loro significato:
+
+*prepareTrain*:
+
+Add your content here.  Format your content with:
+  * Text in *bold* or _italic_
+  * Headings, paragraphs, and lists
+  * Automatic links to other wiki pages
