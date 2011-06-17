@@ -36,3 +36,21 @@ clb.prepareTest();
 NaiveBayes nb = new NaiveBayes();
 clb.constructClassifier(nb);
 }}}
+
+*Esempio di costruzione ed utilizzo di un classificatore weighted majority a partire da classificatori già costruiti:*
+{{{
+List<IClassifier> classifiers = new LinkedList<IClassifier>();
+ClassifierBuilder cb = new ClassifierBuilder();
+WekaClassifier wc1 = cb.retrieveClassifier("weka.classifiers.bayes.NaiveBayes");
+WekaClassifier wc2 = cb.retrieveClassifier("weka.classifiers.trees.J48");
+WekaClassifier wc3 = cb.retrieveClassifier("weka.classifiers.functions.VotedPerceptron");
+classifiers.add(wc1);
+classifiers.add(wc2);
+classifiers.add(wc3);
+WeightedMajority wm  = new WeightedMajority(classifiers);
+Istanza ist = wm.weightedClassify("i am very sad");
+System.out.println(ist.getPolarity());
+ist.setTarget("4");
+wm.setTarget(ist);
+System.out.println(wm.get_cl2weight().get(1) + " " + wm.get_cl2weight().get(2) + " " + wm.get_cl2weight().get(3));
+}}}
