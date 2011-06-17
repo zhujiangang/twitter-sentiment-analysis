@@ -7,25 +7,32 @@ L'applicazione può essere utilizzata tramite linea di comando o tramite API con
 Lista di comandi e loro significato:
 
 *prepareTrain*:
-
 Costruisce le strutture dati necessarie per l'addestramento del classificatore tra cui un file contenente i termini utilizzati suddivisi per tweet. E' possibile inoltre inserire due parametri opzionali:
 "-sf": elimina i termini utilizzati una sola volta
 "-re": elimina le emoticons non considerandole quindi durante l'addestramento del classificatore.
 
 *construct {{{<nome-classificatore>}}}*:
-
 costruisce e addestra il classificatore specificato nel parametro.
 E' possibile inserire un ulteriore parametro opzionale indicante il numero di termini totali da selezionare per l'addestramento.
 
 *weightedMajority {{{<nomi-classificatori>}}}*:
-
 costruisce un classificatore weighted majority utilizzando i classificatori specificati come parametri.
 
 *evaluateWm*:
-
 Valuta il classificatore weighted majority tramite un insieme di tweets di test.
 
-Add your content here.  Format your content with:
-  * Text in *bold* or _italic_
-  * Headings, paragraphs, and lists
-  * Automatic links to other wiki pages
+= Utilizzo tramite API =
+
+*Esempio di costruzione di un classificatore*:
+{{{
+ClassifierBuilder clb = new ClassifierBuilder();
+Options opt = new Options();
+clb.setOpt(opt);
+opt.setSelectedFeaturesByFrequency(true);
+opt.setNumFeatures(150);
+opt.setRemoveEmoticons(true);
+clb.prepareTrain();
+clb.prepareTest();
+NaiveBayes nb = new NaiveBayes();
+clb.constructClassifier(nb);
+}}}
