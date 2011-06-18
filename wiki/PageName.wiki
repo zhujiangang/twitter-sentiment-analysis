@@ -24,7 +24,7 @@ Valuta il classificatore weighted majority tramite un insieme di tweets di test.
 = Utilizzo tramite API =
 
 *Esempio di costruzione di un classificatore:*
-Gli oggetti principali da utilizzare sono "ClassifierBuilder" e "Options". Il primo si occupa della costruzione e dell'addestramento del classificatore mentre il secondo è responsabile della gestione delle varie opzioni del classificatore.
+Gli oggetti principali da utilizzare sono _ClassifierBuilder_ e _Options_. Il primo si occupa della costruzione e dell'addestramento del classificatore mentre il secondo è responsabile della gestione delle varie opzioni del classificatore.
 
 {{{
 ClassifierBuilder clb = new ClassifierBuilder();
@@ -43,7 +43,7 @@ clb.constructClassifier(nb);
 }}}
 
 *Esempio di costruzione ed utilizzo di un classificatore weighted majority a partire da classificatori già costruiti:*
-Per costruire un classificatore weighted majority  è necessario creare un oggetto "WeightedMajority", costruito attraverso una lista di classificatori già addestrati. Un oggetto "Item" rappresenta un tweet; esso memorizza sia la sua classificazione reale, sia quella datagli dal classificatore.
+Per costruire un classificatore weighted majority  è necessario creare un oggetto _WeightedMajority_, costruito attraverso una lista di classificatori già addestrati. Un oggetto "Item" rappresenta un tweet; esso memorizza sia la sua classificazione reale, sia quella datagli dal classificatore.
 {{{
 List<IClassifier> classifiers = new LinkedList<IClassifier>();
 ClassifierBuilder cb = new ClassifierBuilder();
