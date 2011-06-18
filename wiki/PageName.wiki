@@ -24,7 +24,6 @@ Valuta il classificatore weighted majority tramite un insieme di tweets di test.
 = Utilizzo tramite API =
 
 *Esempio di costruzione di un classificatore:*
-
 Gli oggetti principali da utilizzare sono "ClassifierBuilder" e "Options". Il primo si occupa della costruzione e dell'addestramento del classificatore mentre il secondo è responsabile della gestione delle varie opzioni del classificatore.
 
 {{{
