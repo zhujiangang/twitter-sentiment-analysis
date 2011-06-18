@@ -43,7 +43,7 @@ clb.constructClassifier(nb);
 }}}
 
 *Esempio di costruzione ed utilizzo di un classificatore weighted majority a partire da classificatori già costruiti:*
-Per costruire un classificatore weighted majority  è necessario creare un oggetto _WeightedMajority_, costruito attraverso una lista di classificatori già addestrati. Un oggetto "Item" rappresenta un tweet; esso memorizza sia la sua classificazione reale, sia quella datagli dal classificatore.
+Per costruire un classificatore weighted majority  è necessario creare un oggetto {{{"WeightedMajority"}}}, costruito attraverso una lista di classificatori già addestrati. Un oggetto {{{"Item"}}} rappresenta un tweet; esso memorizza sia la sua classificazione reale, sia quella datagli dal classificatore.
 {{{
 List<IClassifier> classifiers = new LinkedList<IClassifier>();
 ClassifierBuilder cb = new ClassifierBuilder();
