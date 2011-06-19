@@ -21,8 +21,9 @@ Total Number of Instances              183
  48 27 |  a = 0
  23 85 |  b = 4
 }}}
-*J48:*
 
+*J48:*
+{{{
 Correctly Classified Instances         117               63.9344 %
 Incorrectly Classified Instances        66               36.0656 %
 Kappa statistic                          0.3132
@@ -37,9 +38,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  63 12 |  a = 0
  54 54 |  b = 4
+}}}
 
 *MultiLayerPerceptron:*
-
+{{{
 Correctly Classified Instances         112               61.2022 %
 Incorrectly Classified Instances        71               38.7978 %
 Kappa statistic                          0.2814
@@ -54,9 +56,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  68  7 |  a = 0
  64 44 |  b = 4
+}}}
 
 *WLSVM:*
-
+{{{
 Correctly Classified Instances         122               66.6667 %
 Incorrectly Classified Instances        61               33.3333 %
 Kappa statistic                          0.3392
@@ -71,9 +74,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  55 20 |  a = 0
  41 67 |  b = 4
+}}}
 
 *VotedPerceptron:*
-
+{{{
 Correctly Classified Instances         125               68.306  %
 Incorrectly Classified Instances        58               31.694  %
 Kappa statistic                          0.3604
@@ -88,11 +92,12 @@ Total Number of Instances              183
   a  b   <-- classified as
  52 23 |  a = 0
  35 73 |  b = 4
+}}}
 
 *Test dei classificatori con rimozione dei termini utilizzati una sola volta, selezione di soli 200 termini ed utilizzo delle emoticons*
 
 *Naive Bayes:*
-
+{{{
 Correctly Classified Instances         143               78.1421 %
 Incorrectly Classified Instances        40               21.8579 %
 Kappa statistic                          0.5444
@@ -107,9 +112,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  53 22 |  a = 0
  18 90 |  b = 4
+}}}
 
 *J48:*
-
+{{{
 Correctly Classified Instances         122               66.6667 %
 Incorrectly Classified Instances        61               33.3333 %
 Kappa statistic                          0.3095
@@ -124,10 +130,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  44 31 |  a = 0
  30 78 |  b = 4
+}}}
 
 *MultiLayerPerceptron:*
-
-
+{{{
 Correctly Classified Instances         105               57.377  %
 Incorrectly Classified Instances        78               42.623  %
 Kappa statistic                          0.2343
@@ -142,9 +148,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  73  2 |  a = 0
  76 32 |  b = 4
+}}}
 
 *WLSVM:*
-
+{{{
 Correctly Classified Instances         123               67.2131 %
 Incorrectly Classified Instances        60               32.7869 %
 Kappa statistic                          0.3436
@@ -159,9 +166,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  53 22 |  a = 0
  38 70 |  b = 4
+}}}}
 
 *Voted Perceptron:*
-
+{{{
 Correctly Classified Instances         119               65.0273 %
 Incorrectly Classified Instances        64               34.9727 %
 Kappa statistic                          0.308 
@@ -176,11 +184,12 @@ Total Number of Instances              183
   a  b   <-- classified as
  54 21 |  a = 0
  43 65 |  b = 4
+}}}
 
 *Test dei classificatori con rimozione dei termini utilizzati una sola volta, selezione di soli 200 termini senza utilizzo delle emoticons*
 
 *Naive Bayes:*
-
+{{{
 Correctly Classified Instances         131               71.5847 %
 Incorrectly Classified Instances        52               28.4153 %
 Kappa statistic                          0.4197
@@ -195,9 +204,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  52 23 |  a = 0
  29 79 |  b = 4
+}}}
 
 *MultiLayerPerceptron:*
-
+{{{
 Correctly Classified Instances         134               73.224  %
 Incorrectly Classified Instances        49               26.776  %
 Kappa statistic                          0.4431
@@ -212,9 +222,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  49 26 |  a = 0
  23 85 |  b = 4
+}}}
 
 *WLSVM:*
-
+{{{
 Correctly Classified Instances         134               73.224  %
 Incorrectly Classified Instances        49               26.776  %
 Kappa statistic                          0.4338
@@ -229,9 +240,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  45 30 |  a = 0
  19 89 |  b = 4
+}}}
 
 *Voted Perceptron:*
-
+{{{
 Correctly Classified Instances         130               71.0383 %
 Incorrectly Classified Instances        53               28.9617 %
 Kappa statistic                          0.4049
@@ -246,13 +258,14 @@ Total Number of Instances              183
   a  b   <-- classified as
  50 25 |  a = 0
  28 80 |  b = 4
+}}}
 
 Il classificatore J48 con questi parametri restituisce un errore di memoria insufficiente.
 
 *Test dei classificatori con rimozione dei termini utilizzati una sola volta, selezione di soli 150 termini con utilizzo delle emoticons*
 
 *Naive Bayes:*
-
+{{{
 Correctly Classified Instances         120               65.5738 %
 Incorrectly Classified Instances        63               34.4262 %
 Kappa statistic                          0.3039
@@ -267,9 +280,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  49 26 |  a = 0
  37 71 |  b = 4
+}}}
 
 *MultiLayerPerceptron:*
-
+{{{
 Correctly Classified Instances         132               72.1311 %
 Incorrectly Classified Instances        51               27.8689 %
 Kappa statistic                          0.393 
@@ -284,9 +298,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  37 38 |  a = 0
  13 95 |  b = 4
+}}}
 
 *WLSVM:*
-
+{{{
 Correctly Classified Instances         130               71.0383 %
 Incorrectly Classified Instances        53               28.9617 %
 Kappa statistic                          0.3824
@@ -301,9 +316,10 @@ Total Number of Instances              183
   a  b   <-- classified as
  41 34 |  a = 0
  19 89 |  b = 4
+}}}
 
 *Voted Perceptron:*
-
+{{{
 Correctly Classified Instances         126               68.8525 %
 Incorrectly Classified Instances        57               31.1475 %
 Kappa statistic                          0.36  
@@ -318,5 +334,6 @@ Total Number of Instances              183
   a  b   <-- classified as
  48 27 |  a = 0
  30 78 |  b = 4
+}}}
 
 Il classificatore J48 con questi parametri restituisce un errore di memoria insufficiente.
