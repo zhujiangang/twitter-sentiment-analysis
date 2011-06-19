@@ -39,7 +39,12 @@ opt.setRemoveEmoticons(true);
 clb.prepareTrain();
 clb.prepareTest();
 NaiveBayes nb = new NaiveBayes();
-clb.constructClassifier(nb);
+WekaClassifier wc = clb.constructClassifier(nb);
+}}}
+
+*Esempio di classificazione di un tweet:*
+{{{
+wc.classify("i am very sad");
 }}}
 
 *Esempio di costruzione ed utilizzo di un classificatore weighted majority a partire da classificatori già costruiti:*
