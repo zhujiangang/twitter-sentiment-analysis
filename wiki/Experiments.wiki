@@ -5,7 +5,7 @@ Sono stati effettuati alcuni esperimenti per testare il funzionamento dei vari c
 *Test dei classificatori con rimozione dei termini utilizzati una sola volta, selezione di soli 150 termini ed utilizzo delle emoticons*
 
 *Naive Bayes:*
-
+{{{
 Correctly Classified Instances         133               72.6776 %
 Incorrectly Classified Instances        50               27.3224 %
 Kappa statistic                          0.4305
@@ -20,7 +20,7 @@ Total Number of Instances              183
   a  b   <-- classified as
  48 27 |  a = 0
  23 85 |  b = 4
-
+}}}
 *J48:*
 
 Correctly Classified Instances         117               63.9344 %
