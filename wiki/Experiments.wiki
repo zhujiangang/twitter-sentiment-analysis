@@ -166,7 +166,7 @@ Total Number of Instances              183
   a  b   <-- classified as
  53 22 |  a = 0
  38 70 |  b = 4
-}}}}
+}}}
 
 *{{{Voted Perceptron:}}}*
 {{{
