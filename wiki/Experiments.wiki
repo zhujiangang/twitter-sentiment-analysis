@@ -38,7 +38,7 @@ Total Number of Instances              183
  63 12 |  a = 0
  54 54 |  b = 4
 
-*MultiLayerPerceptron:*
+*MultiLayerPerceptron*:
 
 Correctly Classified Instances         112               61.2022 %
 Incorrectly Classified Instances        71               38.7978 %
