@@ -132,7 +132,7 @@ Total Number of Instances              183
  30 78 |  b = 4
 }}}
 
-*MultiLayerPerceptron:*
+*{{{MultiLayerPerceptron:}}}*
 {{{
 Correctly Classified Instances         105               57.377  %
 Incorrectly Classified Instances        78               42.623  %
@@ -168,7 +168,7 @@ Total Number of Instances              183
  38 70 |  b = 4
 }}}}
 
-*Voted Perceptron:*
+*{{{Voted Perceptron:}}}*
 {{{
 Correctly Classified Instances         119               65.0273 %
 Incorrectly Classified Instances        64               34.9727 %
@@ -206,7 +206,7 @@ Total Number of Instances              183
  29 79 |  b = 4
 }}}
 
-*MultiLayerPerceptron:*
+*{{{MultiLayerPerceptron:}}}*
 {{{
 Correctly Classified Instances         134               73.224  %
 Incorrectly Classified Instances        49               26.776  %
@@ -242,7 +242,7 @@ Total Number of Instances              183
  19 89 |  b = 4
 }}}
 
-*Voted Perceptron:*
+*{{{Voted Perceptron:}}}*
 {{{
 Correctly Classified Instances         130               71.0383 %
 Incorrectly Classified Instances        53               28.9617 %
@@ -282,7 +282,7 @@ Total Number of Instances              183
  37 71 |  b = 4
 }}}
 
-*MultiLayerPerceptron:*
+*{{{MultiLayerPerceptron:}}}*
 {{{
 Correctly Classified Instances         132               72.1311 %
 Incorrectly Classified Instances        51               27.8689 %
@@ -318,7 +318,7 @@ Total Number of Instances              183
  19 89 |  b = 4
 }}}
 
-*Voted Perceptron:*
+*{{{Voted Perceptron:}}}*
 {{{
 Correctly Classified Instances         126               68.8525 %
 Incorrectly Classified Instances        57               31.1475 %
