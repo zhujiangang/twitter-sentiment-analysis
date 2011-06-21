@@ -39,7 +39,9 @@ opt.setRemoveEmoticons(true);
 clb.prepareTrain();
 clb.prepareTest();
 NaiveBayes nb = new NaiveBayes();
+//costruzione classificatore
 WekaClassifier wc = clb.constructClassifier(nb);
+//classificazione di un tweet
 wc.classify("i am very sad");
 }}}
 
