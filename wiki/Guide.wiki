@@ -15,6 +15,7 @@ Costruisce le strutture dati necessarie per l'addestramento del classificatore t
 costruisce e addestra il classificatore Weka specificato nel parametro.
 E' possibile inserire un ulteriore parametro opzionale indicante il numero di termini totali da selezionare per l'addestramento.
 Il nome del classificatore da inserire deve coincidere con il nome della classe che lo rappresenta nella libreria Weka (per il classificatore Naive Bayes ad esempio il nome sarà {{{weka.classifiers.bayes.NaiveBayes}}}).
+Il classificatore costruito viene memorizzato su disco.
 
 *weightedMajority {{{<nomi-classificatori>}}}:*
 costruisce un classificatore weighted majority utilizzando i classificatori specificati come parametri. Permette inoltre di inserire dei tweet da classificare in modo interattivo.
@@ -42,7 +43,7 @@ clb.prepareTrain();
 clb.prepareTest();
 //classificatore Weka
 NaiveBayes nb = new NaiveBayes();
-//costruzione classificatore
+//costruzione e memorizzazione su disco del classificatore
 WekaClassifier wc = clb.constructClassifier(nb);
 //classificazione di un tweet
 wc.classify("i am very sad");
