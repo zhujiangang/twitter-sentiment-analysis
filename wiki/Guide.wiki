@@ -64,8 +64,9 @@ classifiers.add(wc3);
 WeightedMajority wm  = new WeightedMajority(classifiers);
 //costruisce e classifica un tweet
 Item item = wm.weightedClassify("i am very sad");
+//stampa la classificazione data al tweet dal classificatore
 System.out.println(item.getPolarity());
-//imposta la polarità del tweet
+//imposta la classificazione reale del tweet
 item.setTarget("4");
 //comunica al classificatore weighted majority la polarità esatta del tweet
 wm.setTarget(item);
